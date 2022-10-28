@@ -1,0 +1,137 @@
+.resource-container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 100vh;
+}
+
+.resource-responsive-table li {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.resource-responsive-table .table-content {
+  background-color: #407bff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.resource-responsive-table .resource-table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.resource-responsive-table .col-1 {
+  flex-basis: 10%;
+}
+
+.resource-responsive-table .col-2 {
+  flex-basis: 30%;
+}
+
+.resource-responsive-table .col-3 {
+  flex-basis: 25%;
+}
+
+.resource-container h1 {
+  color: #6b93ec;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.resource-underline {
+  border-bottom: solid 2px #407bff;
+  margin: 1.112em auto;
+  width: 150px;
+}
+
+.more-details button {
+  background-color: #2d7a2d;
+  color: #fff;
+  border: none;
+  padding: 5px 18px;
+  border-radius: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#search-container {
+  margin: 1em 0;
+}
+
+#search-container input {
+  background-color: transparent;
+  width: 30%;
+  padding: 1em 0.3em;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: blue;
+}
+
+#search-container input:focus {
+  border-bottom-color: #407bff;
+}
+
+#search-container [placeholder]:focus::-webkit-input-placeholder {
+  transition: text-indent 0.4s 0.4s ease;
+  text-indent: -100%;
+  opacity: 1;
+}
+
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #407bff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+@media all and (max-width: 767px) {
+  .resource-responsive-table .table-content {
+    display: none;
+  }
+
+  .resource-responsive-table li {
+    display: block;
+  }
+
+  .resource-responsive-table .col {
+    flex-basis: 100%;
+  }
+
+  .resource-responsive-table .col:before {
+    display: flex;
+    padding: 10px 0;
+    color: #407bff;
+    padding-right: 10px;
+    content: attr(data-label);
+    flex-basis: 50%;
+    text-align: right;
+  }
+
+  .resource-container h1 {
+    color: #6b93ec;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .resource-underline {
+    border-bottom: solid 2px #6b93ec;
+    margin: 0.8em auto;
+    width: 100px;
+  }
+}

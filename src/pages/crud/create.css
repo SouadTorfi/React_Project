@@ -1,0 +1,109 @@
+#adduser-user-container {
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+#adduser-user-container form {
+  padding: 36px;
+  margin: 118px 0;
+}
+
+#adduser-user-container h1 {
+  color: #6b93ec;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.adduser-user-underline {
+  border-bottom: solid 2px #6b93ec;
+  margin: -0.312em auto;
+  width: 200px;
+}
+
+.adduser-user-leftSide {
+  float: right;
+  width: 45%;
+}
+
+#adduser-user-container input[type="text"] {
+  border: none;
+  border-bottom: solid 2px #6b93ec;
+  color: #3b3b3b;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  width: 100%;
+}
+
+#adduser-user-container input[type="text"]:focus {
+  outline: none;
+}
+
+.adduser-user-name {
+  float: left;
+  width: 45%;
+}
+
+.adduser-user-leftSide input::placeholder {
+  color: #6b93ec;
+}
+
+.adduser-user-name input::placeholder {
+  color: #6b93ec;
+}
+
+#form_button-adduser-user {
+  background: none;
+  border: solid 2px #6b93ec;
+  border-radius: 18px;
+  color: #6b93ec;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+}
+
+#form_button-adduser-user:hover {
+  background: #6b93ec;
+  color: #f2f3eb;
+}
+
+@media screen and (max-width: 768px) {
+  #adduser-user-container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #adduser-user-container h1 {
+    font-size: 26px;
+  }
+
+  #form_button-adduser-user {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #adduser-user-container h1 {
+    font-size: 18px;
+  }
+
+  .adduser-user-underline {
+    width: 130px;
+  }
+
+  #adduser-user-container input[type="text"] {
+    font-size: 0.875em;
+  }
+}
